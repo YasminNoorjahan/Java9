@@ -45,7 +45,7 @@
 
     <h2>4. Stream API Improvement</h2>
     <ul>
-        <li><code>takeWhile</code> method:</li>
+        <li><code>takeWhile and dropWhile</code> api:</li>
         <pre>
             <code>
 List&lt;Integer&gt; immutableList = List.of(20, 13, 45, 89, 67, 34, 90);
@@ -56,7 +56,7 @@ System.out.println("Odd Numbers");
 immutableList.stream().dropWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
             </code>
         </pre>
-        <li>Overloaded methods i.e., <code>ofNullable</code> and <code>iterate</code>.</li>
+        <li>Overloaded methods : <code>ofNullable</code> and <code>iterate</code>.</li>
     </ul>
 
    <h2>5. Multi-Release JAR files</h2>
@@ -64,7 +64,7 @@ immutableList.stream().dropWhile(number -&gt; number % 2 == 0).collect(Collector
 
     <h2>6. Stack Walking</h2>
     <p>The Stack-Walking API, which provides a way to walk through the frames of a thread's call stack.</p>
-     <img src="https://raw.githubusercontent.com/your-username/your-repo-name/main/path-to-your-image/image-file.png" alt="Java 9 Image">
+     <img src="https://github.com/YasminNoorjahan/Java9/blob/main/StackWalking.png" alt="Java 9 StackWalking Image">
 
 
 
