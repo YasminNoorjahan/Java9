@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 9 Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Java 9 Features</h1>
+
+    <h2>1. Private Methods in Interface</h2>
+    <p>Static and default methods for backward compatibility. Private methods for specific implementation.</p>
+
+    <h2>2. HTTP/2</h2>
+    <p>HTTP/2 support.</p>
+
+    <h2>3. Collection API Updates</h2>
+    <p>Immutable collections like List.of() and Set.of(). Resulting collections are immutable and cannot be modified.</p>
+
+    <h2>4. Stream API Improvement</h2>
+    <ul>
+        <li><code>takeWhile</code> method:</li>
+        <pre>
+            <code>
+List&lt;Integer&gt; immutableList = List.of(20, 13, 45, 89, 67, 34, 90);
+System.out.println("Even Numbers");
+immutableList.stream().takeWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
+
+System.out.println("Odd Numbers");
+immutableList.stream().dropWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
+            </code>
+        </pre>
+        <li>Overloaded methods i.e., <code>ofNullable</code> and <code>iterate</code>.</li>
+    </ul>
+
+</body>
+</html>
