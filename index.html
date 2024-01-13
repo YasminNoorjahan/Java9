@@ -46,6 +46,7 @@
     <h2>4. Stream API Improvement</h2>
     <ul>
         <li><code>takeWhile and dropWhile</code> api:</li>
+        <p> Unlike Filter,  The takeWhile operation stops processing elements once the specified condition becomes false. DropWhile is Opposite of TakeWhile </p>
         <pre>
             <code>
 List&lt;Integer&gt; immutableList = List.of(20, 13, 45, 89, 67, 34, 90);
@@ -56,6 +57,8 @@ System.out.println("Odd Numbers");
 immutableList.stream().dropWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
             </code>
         </pre>
+          <a href="https://github.com/YasminNoorjahan/Java9/blob/main/TakeWhileExample.java">Example</a>
+
         <li>Overloaded methods : <code>ofNullable</code> and <code>iterate</code>.</li>
     </ul>
 
