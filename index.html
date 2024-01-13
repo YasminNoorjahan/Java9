@@ -49,10 +49,12 @@
         <p> Unlike Filter,  The takeWhile operation stops processing elements once the specified condition becomes false. DropWhile is Opposite of TakeWhile </p>
         <pre>
             <code>
+                // The Below prints 20 only. It is the first element satisfy the condition so the preocess stops there itself
 List&lt;Integer&gt; immutableList = List.of(20, 13, 45, 89, 67, 34, 90);
 System.out.println("Even Numbers");
 immutableList.stream().takeWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
-
+ 
+ // The Below prints all elements except 20. 
 System.out.println("Odd Numbers");
 immutableList.stream().dropWhile(number -&gt; number % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
             </code>
